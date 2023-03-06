@@ -71,7 +71,7 @@
    "Add serializers, services, apis, urls"
 ```
  
- **Well done! :+1: enjoy api.
+ **Well done! :+1: enjoy api.**
  
  ![Screenshot from 2023-03-06 10-18-27](https://user-images.githubusercontent.com/47317870/223044018-ae900a66-91bc-4272-967f-4fab2fd1d6fd.png)
  
