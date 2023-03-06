@@ -1,6 +1,4 @@
 from rest_framework.serializers import ModelSerializer, CharField, PrimaryKeyRelatedField, ValidationError
-from datetime import timedelta
-import json
 
 from room_reservation.services import check_rooms_is_booked
 

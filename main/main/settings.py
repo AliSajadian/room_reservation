@@ -83,14 +83,14 @@ WSGI_APPLICATION = "main.wsgi.application"
 
 
 #####################CREATING DATABAE AND USER IN POSTGRES###############
-# CREATE DATABASE myproject;
-# CREATE USER myprojectuser WITH PASSWORD 'password';
+# CREATE DATABASE room_rez_db;
+# CREATE USER room_rez_user WITH PASSWORD 'te$Tpr0J';
 
-# ALTER ROLE myprojectuser SET client_encoding TO 'utf8';
-# ALTER ROLE myprojectuser SET default_transaction_isolation TO 'read committed';
-# ALTER ROLE myprojectuser SET timezone TO 'UTC';
+# ALTER ROLE room_rez_user SET client_encoding TO 'utf8';
+# ALTER ROLE room_rez_user SET default_transaction_isolation TO 'read committed';
+# ALTER ROLE room_rez_user SET timezone TO 'UTC';
 
-# GRANT ALL PRIVILEGES ON DATABASE myproject TO myprojectuser;
+# GRANT ALL PRIVILEGES ON DATABASE room_rez_db TO room_rez_user;
 #########################################################################
 
 # Database

@@ -13,8 +13,8 @@ class DocsView(APIView):
                       'api/room': request.build_absolute_uri('api/room/'),
                       'api/guest': request.build_absolute_uri('api/guest/'),
                       'api/booking': request.build_absolute_uri('api/booking'),
-                      'api/booking/<uuid>/': request.build_absolute_uri('api/booking/1/'),
-                      'api/checkroombooked/<roomid>/<date>/': request.build_absolute_uri('api/checkroombooked/7/2023-03-10/'),
+                      'api/booking/<id>/': request.build_absolute_uri('api/booking/1/'),
+                      'api/checkroombooked/<roomid>/<date>/': request.build_absolute_uri('api/checkroombooked/1/2023-03-10/'),
                      }
         return Response(end_points)
 

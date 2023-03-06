@@ -3,11 +3,10 @@ from rest_framework import status
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.views import APIView
 from rest_framework.permissions import AllowAny
-from rest_framework.decorators import api_view, permission_classes
+from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from datetime import date, datetime, timedelta
 
-from room_reservation.services import check_room_is_booked, check_rooms_is_booked
+from room_reservation.services import check_room_is_booked
 from .models import *
 from .serializers import *
 

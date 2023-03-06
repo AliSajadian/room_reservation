@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 
 
 class Hotel(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, unique=True)
     # ..rest fields
     objects = models.Manager()
 
@@ -16,7 +16,7 @@ class Hotel(models.Model):
 
 
 class EmployeeType(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, unique=True)
     # ..rest fields
     objects = models.Manager()
 
@@ -58,7 +58,7 @@ class Guest(models.Model):
 
 
 class Agent(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, unique=True)
     # ...rest fields
     objects = models.Manager()
 
@@ -70,7 +70,7 @@ class Agent(models.Model):
 
 
 class RoomType(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, unique=True)
     # ..rest fields
     objects = models.Manager()
 
@@ -83,7 +83,7 @@ class RoomType(models.Model):
 
 class Room(models.Model):
     hotel = models.ForeignKey(Hotel, related_name='hotel_room', on_delete=models.PROTECT)
-    room_no = models.IntegerField()
+    room_no = models.IntegerField(unique=True)
     # ...rest fields
     objects = models.Manager()
 
