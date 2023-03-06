@@ -97,10 +97,5 @@ class BookingAPI(APIView):
     def check_room_booked(request, roomid, date):
         result = check_room_is_booked(roomid, date)
         return Response({"status": "checked", "data": result}, status=status.HTTP_200_OK)
-        # if result == 0:
-        #     return Response({"status": "success", "data": "Reserved"})
-        # elif result == 1:
-        #     return Response({"status": "success", "data": "Not Reserved"})
-        # else:
-        #     return Response({"status": "error", "data": "%s" % (result)}, status=status.HTTP_400_BAD_REQUEST)
+
         
