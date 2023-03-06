@@ -38,7 +38,7 @@
    python manage runserver
 ```
 
-### Create project srom scratch
+### Create project from scratch
 ##### 
 ```sudo apt update
    python3 install virtualenv
