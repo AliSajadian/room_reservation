@@ -50,7 +50,7 @@ class Guest(models.Model):
         return '%s %s' % (self.first_name, self.last_name)
 
     class Meta:
-        db_table = 'tbl_rez_Guest'
+        db_table = 'tbl_rez_guest'
 
     @property
     def full_name(self):
@@ -66,7 +66,7 @@ class Agent(models.Model):
         return self.name
 
     class Meta:
-        db_table = 'tbl_rez_guest'
+        db_table = 'tbl_rez_agent'
 
 
 class RoomType(models.Model):

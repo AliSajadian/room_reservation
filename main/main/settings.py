@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     'rest_framework',
+    'rest_framework.authtoken',
     'django_extensions',
     'corsheaders',
 
@@ -48,6 +49,8 @@ INSTALLED_APPS = [
 ]
 
 REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [],
+    'TEST_REQUEST_DEFAULT_FORMAT': 'json'
 }
 
 MIDDLEWARE = [
@@ -82,7 +85,7 @@ TEMPLATES = [
 WSGI_APPLICATION = "main.wsgi.application"
 
 
-#####################CREATING DATABAE AND USER IN POSTGRES###############
+#####################CREATING DATABASE AND USER IN POSTGRES##############
 # CREATE DATABASE room_rez_db;
 # CREATE USER room_rez_user WITH PASSWORD 'te$Tpr0J';
 
